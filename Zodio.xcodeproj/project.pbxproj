@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5FE26BF1E91F36B00CFCFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26BE1E91F36B00CFCFDF /* AppDelegate.swift */; };
+		D5FE26C11E91F36B00CFCFDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26C01E91F36B00CFCFDF /* ViewController.swift */; };
+		D5FE26C41E91F36B00CFCFDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FE26C21E91F36B00CFCFDF /* Main.storyboard */; };
+		D5FE26C61E91F36B00CFCFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FE26C51E91F36B00CFCFDF /* Assets.xcassets */; };
+		D5FE26C91E91F36B00CFCFDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FE26C71E91F36B00CFCFDF /* LaunchScreen.storyboard */; };
+		D5FE26D41E91F36C00CFCFDF /* ZodioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26D31E91F36C00CFCFDF /* ZodioTests.swift */; };
+		D5FE26DF1E91F36C00CFCFDF /* ZodioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26DE1E91F36C00CFCFDF /* ZodioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5FE26D01E91F36C00CFCFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5FE26B31E91F36B00CFCFDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5FE26BA1E91F36B00CFCFDF;
+			remoteInfo = Zodio;
+		};
+		D5FE26DB1E91F36C00CFCFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5FE26B31E91F36B00CFCFDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5FE26BA1E91F36B00CFCFDF;
+			remoteInfo = Zodio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D5FE26BB1E91F36B00CFCFDF /* Zodio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zodio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FE26BE1E91F36B00CFCFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5FE26C01E91F36B00CFCFDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5FE26C31E91F36B00CFCFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5FE26C51E91F36B00CFCFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5FE26C81E91F36B00CFCFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5FE26CA1E91F36B00CFCFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5FE26CF1E91F36C00CFCFDF /* ZodioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZodioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FE26D31E91F36C00CFCFDF /* ZodioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodioTests.swift; sourceTree = "<group>"; };
+		D5FE26D51E91F36C00CFCFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5FE26DA1E91F36C00CFCFDF /* ZodioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZodioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FE26DE1E91F36C00CFCFDF /* ZodioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodioUITests.swift; sourceTree = "<group>"; };
+		D5FE26E01E91F36C00CFCFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5FE26B81E91F36B00CFCFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE26CC1E91F36C00CFCFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE26D71E91F36C00CFCFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5FE26B21E91F36B00CFCFDF = {
+			isa = PBXGroup;
+			children = (
+				D5FE26BD1E91F36B00CFCFDF /* Zodio */,
+				D5FE26D21E91F36C00CFCFDF /* ZodioTests */,
+				D5FE26DD1E91F36C00CFCFDF /* ZodioUITests */,
+				D5FE26BC1E91F36B00CFCFDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5FE26BC1E91F36B00CFCFDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE26BB1E91F36B00CFCFDF /* Zodio.app */,
+				D5FE26CF1E91F36C00CFCFDF /* ZodioTests.xctest */,
+				D5FE26DA1E91F36C00CFCFDF /* ZodioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5FE26BD1E91F36B00CFCFDF /* Zodio */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE26BE1E91F36B00CFCFDF /* AppDelegate.swift */,
+				D5FE26C01E91F36B00CFCFDF /* ViewController.swift */,
+				D5FE26C21E91F36B00CFCFDF /* Main.storyboard */,
+				D5FE26C51E91F36B00CFCFDF /* Assets.xcassets */,
+				D5FE26C71E91F36B00CFCFDF /* LaunchScreen.storyboard */,
+				D5FE26CA1E91F36B00CFCFDF /* Info.plist */,
+			);
+			path = Zodio;
+			sourceTree = "<group>";
+		};
+		D5FE26D21E91F36C00CFCFDF /* ZodioTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE26D31E91F36C00CFCFDF /* ZodioTests.swift */,
+				D5FE26D51E91F36C00CFCFDF /* Info.plist */,
+			);
+			path = ZodioTests;
+			sourceTree = "<group>";
+		};
+		D5FE26DD1E91F36C00CFCFDF /* ZodioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE26DE1E91F36C00CFCFDF /* ZodioUITests.swift */,
+				D5FE26E01E91F36C00CFCFDF /* Info.plist */,
+			);
+			path = ZodioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5FE26BA1E91F36B00CFCFDF /* Zodio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5FE26E31E91F36C00CFCFDF /* Build configuration list for PBXNativeTarget "Zodio" */;
+			buildPhases = (
+				D5FE26B71E91F36B00CFCFDF /* Sources */,
+				D5FE26B81E91F36B00CFCFDF /* Frameworks */,
+				D5FE26B91E91F36B00CFCFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zodio;
+			productName = Zodio;
+			productReference = D5FE26BB1E91F36B00CFCFDF /* Zodio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5FE26CE1E91F36C00CFCFDF /* ZodioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5FE26E61E91F36C00CFCFDF /* Build configuration list for PBXNativeTarget "ZodioTests" */;
+			buildPhases = (
+				D5FE26CB1E91F36C00CFCFDF /* Sources */,
+				D5FE26CC1E91F36C00CFCFDF /* Frameworks */,
+				D5FE26CD1E91F36C00CFCFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5FE26D11E91F36C00CFCFDF /* PBXTargetDependency */,
+			);
+			name = ZodioTests;
+			productName = ZodioTests;
+			productReference = D5FE26CF1E91F36C00CFCFDF /* ZodioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D5FE26D91E91F36C00CFCFDF /* ZodioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5FE26E91E91F36C00CFCFDF /* Build configuration list for PBXNativeTarget "ZodioUITests" */;
+			buildPhases = (
+				D5FE26D61E91F36C00CFCFDF /* Sources */,
+				D5FE26D71E91F36C00CFCFDF /* Frameworks */,
+				D5FE26D81E91F36C00CFCFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5FE26DC1E91F36C00CFCFDF /* PBXTargetDependency */,
+			);
+			name = ZodioUITests;
+			productName = ZodioUITests;
+			productReference = D5FE26DA1E91F36C00CFCFDF /* ZodioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5FE26B31E91F36B00CFCFDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Italyte;
+				TargetAttributes = {
+					D5FE26BA1E91F36B00CFCFDF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3983Y6QL49;
+						ProvisioningStyle = Automatic;
+					};
+					D5FE26CE1E91F36C00CFCFDF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3983Y6QL49;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D5FE26BA1E91F36B00CFCFDF;
+					};
+					D5FE26D91E91F36C00CFCFDF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3983Y6QL49;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D5FE26BA1E91F36B00CFCFDF;
+					};
+				};
+			};
+			buildConfigurationList = D5FE26B61E91F36B00CFCFDF /* Build configuration list for PBXProject "Zodio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5FE26B21E91F36B00CFCFDF;
+			productRefGroup = D5FE26BC1E91F36B00CFCFDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5FE26BA1E91F36B00CFCFDF /* Zodio */,
+				D5FE26CE1E91F36C00CFCFDF /* ZodioTests */,
+				D5FE26D91E91F36C00CFCFDF /* ZodioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5FE26B91E91F36B00CFCFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE26C91E91F36B00CFCFDF /* LaunchScreen.storyboard in Resources */,
+				D5FE26C61E91F36B00CFCFDF /* Assets.xcassets in Resources */,
+				D5FE26C41E91F36B00CFCFDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE26CD1E91F36C00CFCFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE26D81E91F36C00CFCFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5FE26B71E91F36B00CFCFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE26C11E91F36B00CFCFDF /* ViewController.swift in Sources */,
+				D5FE26BF1E91F36B00CFCFDF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE26CB1E91F36C00CFCFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE26D41E91F36C00CFCFDF /* ZodioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE26D61E91F36C00CFCFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE26DF1E91F36C00CFCFDF /* ZodioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5FE26D11E91F36C00CFCFDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5FE26BA1E91F36B00CFCFDF /* Zodio */;
+			targetProxy = D5FE26D01E91F36C00CFCFDF /* PBXContainerItemProxy */;
+		};
+		D5FE26DC1E91F36C00CFCFDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5FE26BA1E91F36B00CFCFDF /* Zodio */;
+			targetProxy = D5FE26DB1E91F36C00CFCFDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5FE26C21E91F36B00CFCFDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5FE26C31E91F36B00CFCFDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5FE26C71E91F36B00CFCFDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5FE26C81E91F36B00CFCFDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5FE26E11E91F36C00CFCFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5FE26E21E91F36C00CFCFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5FE26E41E91F36C00CFCFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3983Y6QL49;
+				INFOPLIST_FILE = Zodio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.italyte.Zodio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D5FE26E51E91F36C00CFCFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3983Y6QL49;
+				INFOPLIST_FILE = Zodio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.italyte.Zodio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D5FE26E71E91F36C00CFCFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3983Y6QL49;
+				INFOPLIST_FILE = ZodioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.italyte.ZodioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zodio.app/Zodio";
+			};
+			name = Debug;
+		};
+		D5FE26E81E91F36C00CFCFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3983Y6QL49;
+				INFOPLIST_FILE = ZodioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.italyte.ZodioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zodio.app/Zodio";
+			};
+			name = Release;
+		};
+		D5FE26EA1E91F36C00CFCFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3983Y6QL49;
+				INFOPLIST_FILE = ZodioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.italyte.ZodioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Zodio;
+			};
+			name = Debug;
+		};
+		D5FE26EB1E91F36C00CFCFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3983Y6QL49;
+				INFOPLIST_FILE = ZodioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.italyte.ZodioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Zodio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5FE26B61E91F36B00CFCFDF /* Build configuration list for PBXProject "Zodio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5FE26E11E91F36C00CFCFDF /* Debug */,
+				D5FE26E21E91F36C00CFCFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5FE26E31E91F36C00CFCFDF /* Build configuration list for PBXNativeTarget "Zodio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5FE26E41E91F36C00CFCFDF /* Debug */,
+				D5FE26E51E91F36C00CFCFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D5FE26E61E91F36C00CFCFDF /* Build configuration list for PBXNativeTarget "ZodioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5FE26E71E91F36C00CFCFDF /* Debug */,
+				D5FE26E81E91F36C00CFCFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D5FE26E91E91F36C00CFCFDF /* Build configuration list for PBXNativeTarget "ZodioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5FE26EA1E91F36C00CFCFDF /* Debug */,
+				D5FE26EB1E91F36C00CFCFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5FE26B31E91F36B00CFCFDF /* Project object */;
+}
