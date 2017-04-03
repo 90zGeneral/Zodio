@@ -11,12 +11,14 @@
 		4F0337E283DDABBC9D7F4740 /* Pods_Zodio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5D26161FC199C3F38196BD /* Pods_Zodio.framework */; };
 		A651556F0D02AC27BEF1ED42 /* Pods_ZodioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F584D92F70EDF15338A9A1 /* Pods_ZodioTests.framework */; };
 		D5FE26BF1E91F36B00CFCFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26BE1E91F36B00CFCFDF /* AppDelegate.swift */; };
-		D5FE26C11E91F36B00CFCFDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26C01E91F36B00CFCFDF /* ViewController.swift */; };
+		D5FE26C11E91F36B00CFCFDF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26C01E91F36B00CFCFDF /* MainVC.swift */; };
 		D5FE26C41E91F36B00CFCFDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FE26C21E91F36B00CFCFDF /* Main.storyboard */; };
 		D5FE26C61E91F36B00CFCFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FE26C51E91F36B00CFCFDF /* Assets.xcassets */; };
 		D5FE26C91E91F36B00CFCFDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FE26C71E91F36B00CFCFDF /* LaunchScreen.storyboard */; };
 		D5FE26D41E91F36C00CFCFDF /* ZodioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26D31E91F36C00CFCFDF /* ZodioTests.swift */; };
 		D5FE26DF1E91F36C00CFCFDF /* ZodioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26DE1E91F36C00CFCFDF /* ZodioUITests.swift */; };
+		D5FE26F21E92DA2000CFCFDF /* AudioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26F11E92DA2000CFCFDF /* AudioVC.swift */; };
+		D5FE26F41E92DCF900CFCFDF /* UsernameTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26F31E92DCF900CFCFDF /* UsernameTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,7 @@
 		CDF54B161C81FD7798A74C74 /* Pods-ZodioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZodioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZodioTests/Pods-ZodioTests.release.xcconfig"; sourceTree = "<group>"; };
 		D5FE26BB1E91F36B00CFCFDF /* Zodio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zodio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FE26BE1E91F36B00CFCFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5FE26C01E91F36B00CFCFDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5FE26C01E91F36B00CFCFDF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D5FE26C31E91F36B00CFCFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5FE26C51E91F36B00CFCFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5FE26C81E91F36B00CFCFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,8 @@
 		D5FE26DA1E91F36C00CFCFDF /* ZodioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZodioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FE26DE1E91F36C00CFCFDF /* ZodioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodioUITests.swift; sourceTree = "<group>"; };
 		D5FE26E01E91F36C00CFCFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5FE26F11E92DA2000CFCFDF /* AudioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioVC.swift; sourceTree = "<group>"; };
+		D5FE26F31E92DCF900CFCFDF /* UsernameTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +181,9 @@
 		D5FE26ED1E91F3D300CFCFDF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D5FE26C01E91F36B00CFCFDF /* ViewController.swift */,
+				D5FE26C01E91F36B00CFCFDF /* MainVC.swift */,
+				D5FE26F11E92DA2000CFCFDF /* AudioVC.swift */,
+				D5FE26F31E92DCF900CFCFDF /* UsernameTableVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -282,7 +288,6 @@
 				TargetAttributes = {
 					D5FE26BA1E91F36B00CFCFDF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3983Y6QL49;
 						ProvisioningStyle = Automatic;
 					};
 					D5FE26CE1E91F36C00CFCFDF = {
@@ -489,7 +494,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5FE26C11E91F36B00CFCFDF /* ViewController.swift in Sources */,
+				D5FE26C11E91F36B00CFCFDF /* MainVC.swift in Sources */,
+				D5FE26F41E92DCF900CFCFDF /* UsernameTableVC.swift in Sources */,
+				D5FE26F21E92DA2000CFCFDF /* AudioVC.swift in Sources */,
 				D5FE26BF1E91F36B00CFCFDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -644,7 +651,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3983Y6QL49;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Zodio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.italyte.Zodio;
@@ -659,7 +666,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3983Y6QL49;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Zodio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.italyte.Zodio;
@@ -749,6 +756,7 @@
 				D5FE26E51E91F36C00CFCFDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5FE26E61E91F36C00CFCFDF /* Build configuration list for PBXNativeTarget "ZodioTests" */ = {
 			isa = XCConfigurationList;
@@ -757,6 +765,7 @@
 				D5FE26E81E91F36C00CFCFDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5FE26E91E91F36C00CFCFDF /* Build configuration list for PBXNativeTarget "ZodioUITests" */ = {
 			isa = XCConfigurationList;
@@ -765,6 +774,7 @@
 				D5FE26EB1E91F36C00CFCFDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
