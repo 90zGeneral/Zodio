@@ -1,0 +1,6 @@
+framework module Pods_ZodioUITests {
+  umbrella header "Pods-ZodioUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

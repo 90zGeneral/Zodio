@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03D7EAB01C950B1AF725CA0A /* Pods_ZodioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A751635D69237A602F8B60 /* Pods_ZodioUITests.framework */; };
+		4F0337E283DDABBC9D7F4740 /* Pods_Zodio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5D26161FC199C3F38196BD /* Pods_Zodio.framework */; };
+		A651556F0D02AC27BEF1ED42 /* Pods_ZodioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F584D92F70EDF15338A9A1 /* Pods_ZodioTests.framework */; };
 		D5FE26BF1E91F36B00CFCFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26BE1E91F36B00CFCFDF /* AppDelegate.swift */; };
 		D5FE26C11E91F36B00CFCFDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26C01E91F36B00CFCFDF /* ViewController.swift */; };
 		D5FE26C41E91F36B00CFCFDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FE26C21E91F36B00CFCFDF /* Main.storyboard */; };
@@ -34,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49F584D92F70EDF15338A9A1 /* Pods_ZodioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZodioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5D26161FC199C3F38196BD /* Pods_Zodio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zodio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D92D1AF9C0620F5E9D6A83 /* Pods-Zodio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zodio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zodio/Pods-Zodio.debug.xcconfig"; sourceTree = "<group>"; };
+		93A751635D69237A602F8B60 /* Pods_ZodioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZodioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED66202DD70BD41F4AA7A10 /* Pods-Zodio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zodio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zodio/Pods-Zodio.release.xcconfig"; sourceTree = "<group>"; };
+		BDDA0F1FF6F322B58498DF25 /* Pods-ZodioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZodioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZodioUITests/Pods-ZodioUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BF5BBCF53BDFD50A228D044D /* Pods-ZodioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZodioUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZodioUITests/Pods-ZodioUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2EA5170FA251FFC5189AC48 /* Pods-ZodioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZodioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZodioTests/Pods-ZodioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDF54B161C81FD7798A74C74 /* Pods-ZodioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZodioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZodioTests/Pods-ZodioTests.release.xcconfig"; sourceTree = "<group>"; };
 		D5FE26BB1E91F36B00CFCFDF /* Zodio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zodio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FE26BE1E91F36B00CFCFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5FE26C01E91F36B00CFCFDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F0337E283DDABBC9D7F4740 /* Pods_Zodio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A651556F0D02AC27BEF1ED42 /* Pods_ZodioTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D7EAB01C950B1AF725CA0A /* Pods_ZodioUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		698E70929489E1D25FB3FA3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A5D26161FC199C3F38196BD /* Pods_Zodio.framework */,
+				49F584D92F70EDF15338A9A1 /* Pods_ZodioTests.framework */,
+				93A751635D69237A602F8B60 /* Pods_ZodioUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA7653819516AC4D593544AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90D92D1AF9C0620F5E9D6A83 /* Pods-Zodio.debug.xcconfig */,
+				9ED66202DD70BD41F4AA7A10 /* Pods-Zodio.release.xcconfig */,
+				C2EA5170FA251FFC5189AC48 /* Pods-ZodioTests.debug.xcconfig */,
+				CDF54B161C81FD7798A74C74 /* Pods-ZodioTests.release.xcconfig */,
+				BF5BBCF53BDFD50A228D044D /* Pods-ZodioUITests.debug.xcconfig */,
+				BDDA0F1FF6F322B58498DF25 /* Pods-ZodioUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D5FE26B21E91F36B00CFCFDF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				D5FE26D21E91F36C00CFCFDF /* ZodioTests */,
 				D5FE26DD1E91F36C00CFCFDF /* ZodioUITests */,
 				D5FE26BC1E91F36B00CFCFDF /* Products */,
+				AA7653819516AC4D593544AA /* Pods */,
+				698E70929489E1D25FB3FA3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5FE26E31E91F36C00CFCFDF /* Build configuration list for PBXNativeTarget "Zodio" */;
 			buildPhases = (
+				63259572E37A7977EFE3B4CF /* [CP] Check Pods Manifest.lock */,
 				D5FE26B71E91F36B00CFCFDF /* Sources */,
 				D5FE26B81E91F36B00CFCFDF /* Frameworks */,
 				D5FE26B91E91F36B00CFCFDF /* Resources */,
+				2F343ED3000A7E97B0D77CA5 /* [CP] Embed Pods Frameworks */,
+				0B81B9A7133B79013099244A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5FE26E61E91F36C00CFCFDF /* Build configuration list for PBXNativeTarget "ZodioTests" */;
 			buildPhases = (
+				5FC56958FB4B0BEE59B3F546 /* [CP] Check Pods Manifest.lock */,
 				D5FE26CB1E91F36C00CFCFDF /* Sources */,
 				D5FE26CC1E91F36C00CFCFDF /* Frameworks */,
 				D5FE26CD1E91F36C00CFCFDF /* Resources */,
+				59E8A539511781C9D7C909AC /* [CP] Embed Pods Frameworks */,
+				C29274BF407CED2DB523C5A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5FE26E91E91F36C00CFCFDF /* Build configuration list for PBXNativeTarget "ZodioUITests" */;
 			buildPhases = (
+				159F5D4272194028CA8FC1C6 /* [CP] Check Pods Manifest.lock */,
 				D5FE26D61E91F36C00CFCFDF /* Sources */,
 				D5FE26D71E91F36C00CFCFDF /* Frameworks */,
 				D5FE26D81E91F36C00CFCFDF /* Resources */,
+				572F8F17627638653A078284 /* [CP] Embed Pods Frameworks */,
+				36A807B6286F6E1C1BC35F74 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,6 +345,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B81B9A7133B79013099244A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zodio/Pods-Zodio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		159F5D4272194028CA8FC1C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2F343ED3000A7E97B0D77CA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zodio/Pods-Zodio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36A807B6286F6E1C1BC35F74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZodioUITests/Pods-ZodioUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		572F8F17627638653A078284 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZodioUITests/Pods-ZodioUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59E8A539511781C9D7C909AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZodioTests/Pods-ZodioTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FC56958FB4B0BEE59B3F546 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63259572E37A7977EFE3B4CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C29274BF407CED2DB523C5A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZodioTests/Pods-ZodioTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5FE26B71E91F36B00CFCFDF /* Sources */ = {
@@ -453,8 +640,10 @@
 		};
 		D5FE26E41E91F36C00CFCFDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D92D1AF9C0620F5E9D6A83 /* Pods-Zodio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3983Y6QL49;
 				INFOPLIST_FILE = Zodio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -466,8 +655,10 @@
 		};
 		D5FE26E51E91F36C00CFCFDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ED66202DD70BD41F4AA7A10 /* Pods-Zodio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3983Y6QL49;
 				INFOPLIST_FILE = Zodio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -479,6 +670,7 @@
 		};
 		D5FE26E71E91F36C00CFCFDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2EA5170FA251FFC5189AC48 /* Pods-ZodioTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +686,7 @@
 		};
 		D5FE26E81E91F36C00CFCFDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF54B161C81FD7798A74C74 /* Pods-ZodioTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +702,7 @@
 		};
 		D5FE26EA1E91F36C00CFCFDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5BBCF53BDFD50A228D044D /* Pods-ZodioUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3983Y6QL49;
@@ -523,6 +717,7 @@
 		};
 		D5FE26EB1E91F36C00CFCFDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDDA0F1FF6F322B58498DF25 /* Pods-ZodioUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3983Y6QL49;

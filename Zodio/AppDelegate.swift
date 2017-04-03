@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Zodio
-//
-//  Created by Roydon Jeffrey on 4/2/17.
-//  Copyright © 2017 Italyte. All rights reserved.
-//
 
 import UIKit
 
