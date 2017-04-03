@@ -97,12 +97,11 @@
 		D5FE26BD1E91F36B00CFCFDF /* Zodio */ = {
 			isa = PBXGroup;
 			children = (
-				D5FE26BE1E91F36B00CFCFDF /* AppDelegate.swift */,
-				D5FE26C01E91F36B00CFCFDF /* ViewController.swift */,
-				D5FE26C21E91F36B00CFCFDF /* Main.storyboard */,
-				D5FE26C51E91F36B00CFCFDF /* Assets.xcassets */,
-				D5FE26C71E91F36B00CFCFDF /* LaunchScreen.storyboard */,
-				D5FE26CA1E91F36B00CFCFDF /* Info.plist */,
+				D5FE26EF1E91F3F400CFCFDF /* Model */,
+				D5FE26EE1E91F3E200CFCFDF /* View */,
+				D5FE26ED1E91F3D300CFCFDF /* Controller */,
+				D5FE26EC1E91F3C300CFCFDF /* Utils */,
+				D5FE26F01E91F3FB00CFCFDF /* Resources */,
 			);
 			path = Zodio;
 			sourceTree = "<group>";
@@ -123,6 +122,47 @@
 				D5FE26E01E91F36C00CFCFDF /* Info.plist */,
 			);
 			path = ZodioUITests;
+			sourceTree = "<group>";
+		};
+		D5FE26EC1E91F3C300CFCFDF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE26BE1E91F36B00CFCFDF /* AppDelegate.swift */,
+				D5FE26C51E91F36B00CFCFDF /* Assets.xcassets */,
+				D5FE26CA1E91F36B00CFCFDF /* Info.plist */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		D5FE26ED1E91F3D300CFCFDF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE26C01E91F36B00CFCFDF /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D5FE26EE1E91F3E200CFCFDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE26C21E91F36B00CFCFDF /* Main.storyboard */,
+				D5FE26C71E91F36B00CFCFDF /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D5FE26EF1E91F3F400CFCFDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D5FE26F01E91F3FB00CFCFDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
