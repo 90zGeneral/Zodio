@@ -1,7 +1,7 @@
 
 import UIKit
 
-class AudioVC: UIViewController {
+class SelectedTrackVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
