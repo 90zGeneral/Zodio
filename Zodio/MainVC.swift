@@ -39,9 +39,10 @@ class MainVC: UIViewController {
                 //
                 print(tracks.count)
                 
-                
             }
         }
+        
+        zodiacSearch.resignFirstResponder()
     }
 
 }

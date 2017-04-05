@@ -58,8 +58,8 @@ class SoundCloudTrack {
                 
                 //Loop over the array
                 for dict in arrayOfDicts {
-                    let obj = SoundCloudTrack(object: dict)
-                    tracks.append(obj)
+                    let track = SoundCloudTrack(object: dict)
+                    tracks.append(track)
                     
                     //Grab the title for the track
                     if let trackTitle = dict["title"] as? String {
