@@ -1,10 +1,5 @@
-//
 //  TrackCell.swift
 //  Zodio
-//
-//  Created by Roydon Jeffrey on 4/4/17.
-//  Copyright © 2017 Italyte. All rights reserved.
-//
 
 import UIKit
 
@@ -27,7 +22,7 @@ class TrackCell: UITableViewCell {
     
     func configureCell(track: SoundCloudTrack) {
         trackName.text = track.trackName
-        username.text = track.username
+        username.text = "from " + track.username
     }
 
 }

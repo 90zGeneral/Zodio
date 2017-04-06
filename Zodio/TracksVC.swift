@@ -1,3 +1,5 @@
+//  TracksVC.swift
+//  Zodio
 
 import UIKit
 
@@ -41,11 +43,17 @@ class TracksVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
+        let selectedSong = tracks[indexPath.row]
+        
+        performSegue(withIdentifier: "TrackChosen", sender: selectedSong)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //
+        if let destination = segue.destination as? SelectedTrackVC {
+            if let thisTrack = sender as? SoundCloudTrack {
+                destination.chosenTrack = thisTrack
+            }
+        }
     }
 }
 

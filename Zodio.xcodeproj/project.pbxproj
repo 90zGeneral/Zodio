@@ -23,6 +23,8 @@
 		D5FE26F81E93FA3700CFCFDF /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26F71E93FA3700CFCFDF /* TrackCell.swift */; };
 		D5FE26FA1E940D5500CFCFDF /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26F91E940D5500CFCFDF /* GlobalVariables.swift */; };
 		D5FE26FC1E944B2C00CFCFDF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26FB1E944B2C00CFCFDF /* MainVC.swift */; };
+		D5FE26FE1E95D12800CFCFDF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE26FD1E95D12800CFCFDF /* Alamofire.framework */; };
+		D5FE27001E95EB6900CFCFDF /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26FF1E95EB6900CFCFDF /* FetchData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		D5FE26F71E93FA3700CFCFDF /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		D5FE26F91E940D5500CFCFDF /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		D5FE26FB1E944B2C00CFCFDF /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		D5FE26FD1E95D12800CFCFDF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Zodio-chhwhskvoangzueyxldxpxcmbibu/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		D5FE26FF1E95EB6900CFCFDF /* FetchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5FE26FE1E95D12800CFCFDF /* Alamofire.framework in Frameworks */,
 				4F0337E283DDABBC9D7F4740 /* Pods_Zodio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +109,7 @@
 		698E70929489E1D25FB3FA3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5FE26FD1E95D12800CFCFDF /* Alamofire.framework */,
 				4A5D26161FC199C3F38196BD /* Pods_Zodio.framework */,
 				49F584D92F70EDF15338A9A1 /* Pods_ZodioTests.framework */,
 				93A751635D69237A602F8B60 /* Pods_ZodioUITests.framework */,
@@ -211,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				D5FE26F51E93F8A100CFCFDF /* SoundCloudTrack.swift */,
+				D5FE26FF1E95EB6900CFCFDF /* FetchData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -513,6 +520,7 @@
 				D5FE26FA1E940D5500CFCFDF /* GlobalVariables.swift in Sources */,
 				D5FE26FC1E944B2C00CFCFDF /* MainVC.swift in Sources */,
 				D5FE26BF1E91F36B00CFCFDF /* AppDelegate.swift in Sources */,
+				D5FE27001E95EB6900CFCFDF /* FetchData.swift in Sources */,
 				D5FE26F81E93FA3700CFCFDF /* TrackCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

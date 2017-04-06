@@ -149,6 +149,7 @@
                     <navigationItem key="navigationItem" id="Uue-ah-ExO"/>
                     <connections>
                         <outlet property="songsTableView" destination="RF2-gs-li5" id="Fpx-5c-5My"/>
+                        <segue destination="2Cw-XX-V89" kind="show" identifier="TrackChosen" id="0vJ-9e-Enp"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjE-ZW-a6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
