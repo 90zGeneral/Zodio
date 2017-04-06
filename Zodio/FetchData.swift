@@ -29,7 +29,7 @@ class FetchData {
                     let newSoundCloudTrack = SoundCloudTrack(trackDict: eachTrackDict)
                     
                     //Limit the array to 5 tracks at a time
-                    if tracks.count < 6 {
+                    if tracks.count < 11 {
                         tracks.append(newSoundCloudTrack)
                     }
                 }

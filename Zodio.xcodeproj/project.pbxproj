@@ -217,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				D5FE26F51E93F8A100CFCFDF /* SoundCloudTrack.swift */,
-				D5FE26FF1E95EB6900CFCFDF /* FetchData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -226,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				D5FE26F91E940D5500CFCFDF /* GlobalVariables.swift */,
+				D5FE26FF1E95EB6900CFCFDF /* FetchData.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";

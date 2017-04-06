@@ -51,7 +51,7 @@ class TracksVC: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? SelectedTrackVC {
             if let thisTrack = sender as? SoundCloudTrack {
-                destination.chosenTrack = thisTrack
+                destination.soundCloudTrack = thisTrack
             }
         }
     }
