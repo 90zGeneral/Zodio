@@ -25,6 +25,7 @@
 		D5FE26FC1E944B2C00CFCFDF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26FB1E944B2C00CFCFDF /* MainVC.swift */; };
 		D5FE26FE1E95D12800CFCFDF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE26FD1E95D12800CFCFDF /* Alamofire.framework */; };
 		D5FE27001E95EB6900CFCFDF /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26FF1E95EB6900CFCFDF /* FetchData.swift */; };
+		D5FE27041E9879D600CFCFDF /* UserTackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE27031E9879D600CFCFDF /* UserTackCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		D5FE26FB1E944B2C00CFCFDF /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D5FE26FD1E95D12800CFCFDF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Zodio-chhwhskvoangzueyxldxpxcmbibu/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		D5FE26FF1E95EB6900CFCFDF /* FetchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
+		D5FE27031E9879D600CFCFDF /* UserTackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTackCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				D5FE26C21E91F36B00CFCFDF /* Main.storyboard */,
 				D5FE26C71E91F36B00CFCFDF /* LaunchScreen.storyboard */,
 				D5FE26F71E93FA3700CFCFDF /* TrackCell.swift */,
+				D5FE27031E9879D600CFCFDF /* UserTackCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -308,6 +311,11 @@
 					D5FE26BA1E91F36B00CFCFDF = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					D5FE26CE1E91F36C00CFCFDF = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -516,6 +524,7 @@
 				D5FE26C11E91F36B00CFCFDF /* TracksVC.swift in Sources */,
 				D5FE26F61E93F8A100CFCFDF /* SoundCloudTrack.swift in Sources */,
 				D5FE26F41E92DCF900CFCFDF /* UsernameTableVC.swift in Sources */,
+				D5FE27041E9879D600CFCFDF /* UserTackCell.swift in Sources */,
 				D5FE26F21E92DA2000CFCFDF /* SelectedTrackVC.swift in Sources */,
 				D5FE26FA1E940D5500CFCFDF /* GlobalVariables.swift in Sources */,
 				D5FE26FC1E944B2C00CFCFDF /* MainVC.swift in Sources */,

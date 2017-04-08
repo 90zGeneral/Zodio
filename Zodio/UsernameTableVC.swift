@@ -4,15 +4,24 @@
 import UIKit
 
 class UsernameTableVC: UITableViewController {
+    
+    
+    @IBOutlet weak var usernameTitle: UILabel!
+    @IBOutlet var userSongTable: UITableView!
+    
+//    var userSoundCloudTrack
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        userSongTable.delegate = self
+        userSongTable.dataSource = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        userSongTable.reloadData()
+        
+//        usernameTitle.text = 
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,18 +38,22 @@ class UsernameTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return tracks.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath) as? UserTackCell {
+            let thisTrack = tracks[indexPath.row]
+            cell.configureUserCell(userTrack: thisTrack)
+            
+            return cell
+            
+        }else {
+            
+            return UITableViewCell()
+        }
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

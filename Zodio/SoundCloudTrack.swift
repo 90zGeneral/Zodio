@@ -8,6 +8,8 @@ class SoundCloudTrack {
     fileprivate var _trackName: String!
     fileprivate var _username: String!
     fileprivate var _trackImg: String!
+    fileprivate var _streamUrl: String!
+    fileprivate var _userID: String!
     
     //Getters
     var trackName: String {
@@ -31,6 +33,13 @@ class SoundCloudTrack {
         return _trackImg
     }
     
+    var streamUrl: String {
+        if _streamUrl == nil {
+            _streamUrl = ""
+        }
+        return _streamUrl
+    }
+    
     init(trackDict: [String: Any]) {
         
         //Grab the title for the track
@@ -41,6 +50,11 @@ class SoundCloudTrack {
         //Grab the image artwork for the track
         if let trackArtwork = trackDict["artwork_url"] as? String {
             self._trackImg = trackArtwork
+        }
+        
+        //Grab the streaming link to play audio
+        if let streamingLink = trackDict["stream_url"] as? String {
+            self._streamUrl = streamingLink
         }
         
         //Grab the username attached to this track

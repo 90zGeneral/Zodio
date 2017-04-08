@@ -8,10 +8,14 @@ class SelectedTrackVC: UIViewController {
     //Outlets
     @IBOutlet weak var trackImg: UIImageView!
     @IBOutlet weak var trackTitle: UILabel!
+    @IBOutlet weak var uploadedBy: UILabel!
     @IBOutlet weak var moreTunesBtn: UIButton!
     
     //A soundCloud track
     var soundCloudTrack: SoundCloudTrack!
+    var fetchData = FetchData()
+    
+    var userArray = ["water", "sand", "fire", "earth", "wind", "cloud", "trees"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +23,7 @@ class SelectedTrackVC: UIViewController {
         if soundCloudTrack != nil {
             
             trackTitle.text = soundCloudTrack.trackName
+            uploadedBy.text = "uploaded by " + soundCloudTrack.username
             moreTunesBtn.setTitle("More Tracks from " + soundCloudTrack.username, for: .normal)
             
             if let checkedUrl = URL(string: soundCloudTrack.trackImg) {
@@ -52,6 +57,17 @@ class SelectedTrackVC: UIViewController {
     }
     
     @IBAction func moreTunesFromUser(_ sender: UIButton) {
+        
+        let rand = arc4random_uniform(6) + 1
+        let convertRandToInt = Int(rand)
+        
+        updateURL(input: userArray[convertRandToInt])
+        
+        fetchData.downloadSoundCloudTrackDetails {
+            print(tracks.count)
+        }
+        
+        performSegue(withIdentifier: "UserTableVC", sender: nil)
         
     }
 

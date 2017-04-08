@@ -14,8 +14,10 @@ class TracksVC: UITableViewController {
         songsTableView.delegate = self
         songsTableView.dataSource = self
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         songsTableView.reloadData()
-        
     }
     
     //Number of sections in the tableView
