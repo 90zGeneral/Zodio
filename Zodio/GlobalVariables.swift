@@ -5,10 +5,13 @@ import Foundation
 
 //Array of songs
 var tracks = [SoundCloudTrack]()
+var userTracks = [SoundCloudTrack]()
 
 //Grab the user's input
 var userInput: String!
 var completeUrl: String!
+
+var whichArrayToUse = ""
 
 func updateURL(input: String) {
     

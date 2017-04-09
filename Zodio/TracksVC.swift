@@ -8,16 +8,32 @@ class TracksVC: UITableViewController {
     //Outlets
     @IBOutlet weak var songsTableView: UITableView!
     
+    //New Instance
+    let fetchData = FetchData()
+    
+    var inputString: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         songsTableView.delegate = self
         songsTableView.dataSource = self
         
+        //Function call to update userInput and the url components
+        updateURL(input: inputString)
+        
+        whichArrayToUse = "tracks"
+        
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        songsTableView.reloadData()
+    override func viewWillAppear(_ animated: Bool) {
+        
+        //Function call to api network request
+        fetchData.downloadSoundCloudTrackDetails {
+            
+            //Reload the table after the data finish downloading and just before the view appears
+            self.songsTableView.reloadData()
+        }
     }
     
     //Number of sections in the tableView
@@ -27,6 +43,7 @@ class TracksVC: UITableViewController {
     
     //Number of rows in the tableView's sections
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return tracks.count
     }
     

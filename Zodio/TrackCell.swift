@@ -20,7 +20,10 @@ class TrackCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //Cell configuration
     func configureCell(track: SoundCloudTrack) {
+        
+        //Assignment for cell content
         trackName.text = track.trackName
         username.text = "from " + track.username
     }

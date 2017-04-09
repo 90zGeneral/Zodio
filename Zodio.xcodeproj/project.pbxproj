@@ -197,10 +197,10 @@
 		D5FE26ED1E91F3D300CFCFDF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D5FE26FB1E944B2C00CFCFDF /* MainVC.swift */,
 				D5FE26C01E91F36B00CFCFDF /* TracksVC.swift */,
 				D5FE26F11E92DA2000CFCFDF /* SelectedTrackVC.swift */,
 				D5FE26F31E92DCF900CFCFDF /* UsernameTableVC.swift */,
-				D5FE26FB1E944B2C00CFCFDF /* MainVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";

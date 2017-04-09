@@ -7,9 +7,6 @@ class MainVC: UIViewController, UITextFieldDelegate {
     
     //Outlet
     @IBOutlet weak var zodiacSearch: UITextField!
-    @IBOutlet weak var searchBtn: UIButton!
-    
-    let fetchData = FetchData()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,40 +14,38 @@ class MainVC: UIViewController, UITextFieldDelegate {
         zodiacSearch.delegate = self
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    //Activate the return key on the keyboard
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        //Deactivate the search button
-        searchBtn.isEnabled = false
-        searchBtn.backgroundColor = UIColor.lightGray
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        //Reactivate the search button
-        searchBtn.isEnabled = true
-        searchBtn.backgroundColor = UIColor.black
-    }
-    
-    @IBAction func search(_ sender: UIButton) {
         //Make sure the search bar is not empty
         if zodiacSearch.text != nil && zodiacSearch.text != "" && zodiacSearch.text != " " {
             
+            //Remove the empty space at the end of the input string from the keyboard recommendations
             if zodiacSearch.text?.characters.last == " " {
                 
                 zodiacSearch.text?.characters.removeLast()
             }
             
-            //Function call to update userInput and the url components
-            updateURL(input: zodiacSearch.text!)
+            let zodiacString = zodiacSearch.text
             
-            fetchData.downloadSoundCloudTrackDetails {
-                
-                //Empty out the textField
-                self.zodiacSearch.text = nil
-            }
-            
-            performSegue(withIdentifier: "TracksVC", sender: nil)
+            //Perform segue
+            performSegue(withIdentifier: "TracksVC", sender: zodiacString)
         }
         
+        //Empty out the tracks array, textField, and disable the keyboard
+        tracks.removeAll()
+        zodiacSearch.text = ""
         zodiacSearch.resignFirstResponder()
+        
+        return true
+    }
+    
+    //Prepare for the segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? TracksVC {
+            if let inputString = sender as? String {
+                destination.inputString = inputString
+            }
+        }
     }
 }

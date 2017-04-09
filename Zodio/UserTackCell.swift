@@ -10,6 +10,7 @@ import UIKit
 
 class UserTackCell: UITableViewCell {
     
+    //Outlet
     @IBOutlet weak var userTrackTitle: UILabel!
 
     override func awakeFromNib() {
@@ -23,7 +24,11 @@ class UserTackCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //Cell configuration
     func configureUserCell(userTrack: SoundCloudTrack) {
+        
+        //Assignment for cell content
+        userTrackTitle.text = userTrack.trackName
     
     }
 

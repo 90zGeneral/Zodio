@@ -22,10 +22,6 @@ class FetchData {
             //To store the results being returned as an array of dictionaries
             if let arrayOfDicts = response.result.value! as? [[String: Any]] {
                 
-                let arrayCount = arrayOfDicts.count
-                
-                tracks.removeAll()
-                
                 //Loop over the array
                 for eachTrackDict in arrayOfDicts {
                     
@@ -33,8 +29,10 @@ class FetchData {
                     let newSoundCloudTrack = SoundCloudTrack(trackDict: eachTrackDict)
                     
                     //Limit the array to 5 tracks at a time
-                    if tracks.count < arrayCount && tracks.count < 10 {
+                    if whichArrayToUse == "tracks" {
                         tracks.append(newSoundCloudTrack)
+                    }else if whichArrayToUse == "userTracks" {
+                        userTracks.append(newSoundCloudTrack)
                     }
                 }
             }
