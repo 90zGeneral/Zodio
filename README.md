@@ -32,6 +32,8 @@ Listen to more tracks from a specific user.
 
 A recommendation system based on the tracks being search by a certain zodiac sign using storage.
 
+Allow users to choose their zodiac signs rather than typing/spelling it out into a textField
+
 ### Improvements
 Better UI and UX design
 
