@@ -15,6 +15,8 @@ This app was built using Xcode 8, Swift 3 and requires atleast iOS 10.2 to run.
 Third party technologies used are SoundCloud Public Search API for providing the app's data, CocoaPods as the dependency manager for external libraries, and Alamofire for making the Network request to the api.
 
 ### How To Use The App
+Use the `Zodio.xcworkspace` file to open the app in Xcode
+
 Choose the simulator device of your choice in Xcode or connect a physical device.
 
 `Tap inside the textField` to activate the editing mode and enter your zodiac sign.
@@ -38,5 +40,10 @@ Allow users to choose their zodiac signs rather than typing/spelling it out into
 Better UI and UX design
 
 Cleaner code and a stronger MVC structure
+
+### Testing
+See the `ZodioTests` group for Unit Testing
+
+See the `ZodioUITests` group for UI Testing
 
 
