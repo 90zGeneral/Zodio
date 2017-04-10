@@ -14,6 +14,7 @@ class FetchData {
     //To make the network call to the api
     func downloadSoundCloudTrackDetails(completed: @escaping DownloadComplete) {
         
+        //String conversion to URL
         let theFullUrl = URL(string: completeUrl)!
         
         //GET request

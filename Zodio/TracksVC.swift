@@ -8,7 +8,7 @@ class TracksVC: UITableViewController {
     //Outlets
     @IBOutlet weak var songsTableView: UITableView!
     
-    //New Instance
+    //New Instance of FetchData class
     let fetchData = FetchData()
     
     var inputString: String!
@@ -22,6 +22,7 @@ class TracksVC: UITableViewController {
         //Function call to update userInput and the url components
         updateURL(input: inputString)
         
+        //To update the state on which array to use to populate the table
         whichArrayToUse = "tracks"
         
     }
@@ -61,12 +62,15 @@ class TracksVC: UITableViewController {
         }
     }
     
+    //Determines which cell was selected
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedSong = tracks[indexPath.row]
         
+        //Perform segue
         performSegue(withIdentifier: "TrackChosen", sender: selectedSong)
     }
     
+    //Prepare the segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? SelectedTrackVC {
             if let thisTrack = sender as? SoundCloudTrack {

@@ -1,15 +1,13 @@
-//
 //  ZodioTests.swift
 //  ZodioTests
-//
-//  Created by Roydon Jeffrey on 4/2/17.
-//  Copyright © 2017 Italyte. All rights reserved.
-//
 
 import XCTest
 @testable import Zodio
 
 class ZodioTests: XCTestCase {
+    
+    //New instance
+    var vc = MainVC()
     
     override func setUp() {
         super.setUp()
@@ -31,6 +29,15 @@ class ZodioTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    //Test the state change in the textField
+    func testCheckIfTextFieldIsEmpty() {
+        let sign = "scorpio"
+        let nilSign: String? = nil
+        
+        XCTAssertTrue(vc.checkIfTextFieldIsEmpty(string: sign), "A zodiac sign has been entered")
+        XCTAssertFalse(vc.checkIfTextFieldIsEmpty(string: nilSign))
     }
     
 }

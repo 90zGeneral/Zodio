@@ -1,12 +1,8 @@
-//
 //  ZodioUITests.swift
 //  ZodioUITests
-//
-//  Created by Roydon Jeffrey on 4/2/17.
-//  Copyright © 2017 Italyte. All rights reserved.
-//
 
 import XCTest
+import Foundation
 
 class ZodioUITests: XCTestCase {
         
@@ -31,6 +27,29 @@ class ZodioUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+        
+        let app = XCUIApplication()
+        let eGScorpioTextField = app.textFields["e.g. scorpio"]
+        
+        //Test that the textField is empty before tap gesture
+        XCTAssertEqual(eGScorpioTextField.value as! String?, "")
+        
+        eGScorpioTextField.tap()
+        eGScorpioTextField.typeText("capricorn")
+        
+        //Test that the textField input value equals to "capricorn" and not "libra" after editing has finish
+        XCTAssertFalse(eGScorpioTextField.value as! String == "libra")
+        XCTAssertTrue(eGScorpioTextField.value as! String == "capricorn")
+        
+        app.typeText("\r")
+        
+        //Test that the textField no longer exist after the "return" key press
+        XCTAssertEqual(eGScorpioTextField.exists, false)
+        
+        //Test the number of rows in the table right after the "return" key press
+        XCTAssertEqual(app.tables.tableRows.count, 0)
+        
     }
     
 }

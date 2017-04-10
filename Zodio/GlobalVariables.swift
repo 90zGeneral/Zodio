@@ -7,10 +7,11 @@ import Foundation
 var tracks = [SoundCloudTrack]()
 var userTracks = [SoundCloudTrack]()
 
-//Grab the user's input
+//Variables declaration
 var userInput: String!
 var completeUrl: String!
 
+//A control state
 var whichArrayToUse = ""
 
 func updateURL(input: String) {

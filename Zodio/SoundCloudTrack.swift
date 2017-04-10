@@ -5,6 +5,7 @@ import Foundation
 
 class SoundCloudTrack {
     
+    //Private variables
     fileprivate var _trackName: String!
     fileprivate var _username: String!
     fileprivate var _trackImg: String!
@@ -40,6 +41,7 @@ class SoundCloudTrack {
         return _streamUrl
     }
     
+    //Initializer
     init(trackDict: [String: Any]) {
         
         //Grab the title for the track

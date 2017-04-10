@@ -17,15 +17,18 @@ class SelectedTrackVC: UIViewController {
     var soundCloudTrack: SoundCloudTrack!
     var fetchData = FetchData()
     
+    //Declaration of an AVPlayer, its Item, and current play state
     var player = AVPlayer()
     var playerItem: AVPlayerItem!
     var isMusicPlaying = false
     
+    //These elements will be used as parameters in the network call to see more tracks by a specific user
     var userArray = ["water", "sand", "fire", "earth", "wind", "cloud", "trees"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //String conversion to URL to stream the music, add item to AVPlayer, set the rate of the player, and change the play state
         playerItem = AVPlayerItem(url: URL(string: soundCloudTrack.streamUrl + "?client_id=d6i0wruU7ddayTqrhwszluW0i9aNBlb1")!)
         player = AVPlayer(playerItem: playerItem)
         player.rate = 1.0
@@ -34,15 +37,18 @@ class SelectedTrackVC: UIViewController {
         
         if soundCloudTrack != nil {
             
+            //Outlet assignments
             trackTitle.text = soundCloudTrack.trackName
             uploadedBy.text = "uploaded by " + soundCloudTrack.username.capitalized
             moreTunesBtn.setTitle("More Tracks from " + soundCloudTrack.username.capitalized, for: .normal)
             
+            //String conversion to URL and function call to download the image if successful
             if let checkedUrl = URL(string: soundCloudTrack.trackImg) {
                 trackImg.contentMode = .scaleAspectFit
                 downloadImage(url: checkedUrl)
                 
             }else {
+                //Otherwise, use a default image
                 trackImg.contentMode = .scaleAspectFit
                 trackImg.image = UIImage(named: "smiley")
             }
@@ -50,6 +56,7 @@ class SelectedTrackVC: UIViewController {
 
     }
     
+    //To get the data from the URL
     func getDataFromUrl(url: URL, completion: @escaping (_ data: Data?, _  response: URLResponse?, _ error: Error?) -> Void) {
         URLSession.shared.dataTask(with: url) {
             (data, response, error) in
@@ -57,6 +64,7 @@ class SelectedTrackVC: UIViewController {
             }.resume()
     }
     
+    //To download a track image
     func downloadImage(url: URL) {
         print("Download Started")
         getDataFromUrl(url: url) { (data, response, error)  in
@@ -68,6 +76,7 @@ class SelectedTrackVC: UIViewController {
         }
     }
     
+    //To control the playing state of the track
     @IBAction func musicBtn(_ sender: UIButton) {
         if isMusicPlaying {
             player.pause()
@@ -82,19 +91,25 @@ class SelectedTrackVC: UIViewController {
         }
     }
     
+    //View more tracks from the user
     @IBAction func moreTunesFromUser(_ sender: UIButton) {
         
+        //Random number generator
         let rand = arc4random_uniform(6) + 1
         let convertRandToInt = Int(rand)
         
+        //Empty out the array
         userTracks.removeAll()
         
+        //Function call to update the url components for the network call 
         updateURL(input: userArray[convertRandToInt])
         
+        //Perform segue
         performSegue(withIdentifier: "UserTableVC", sender: soundCloudTrack)
         
     }
     
+    //Prepare for the segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? UsernameTableVC {
             if let chosenTrack = sender as? SoundCloudTrack {

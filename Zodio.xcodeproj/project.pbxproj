@@ -26,6 +26,7 @@
 		D5FE26FE1E95D12800CFCFDF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE26FD1E95D12800CFCFDF /* Alamofire.framework */; };
 		D5FE27001E95EB6900CFCFDF /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26FF1E95EB6900CFCFDF /* FetchData.swift */; };
 		D5FE27041E9879D600CFCFDF /* UserTackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE27031E9879D600CFCFDF /* UserTackCell.swift */; };
+		D5FE27061E9AAF5A00CFCFDF /* SoundCloudTrackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE27051E9AAF5A00CFCFDF /* SoundCloudTrackTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		D5FE26FD1E95D12800CFCFDF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Zodio-chhwhskvoangzueyxldxpxcmbibu/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		D5FE26FF1E95EB6900CFCFDF /* FetchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 		D5FE27031E9879D600CFCFDF /* UserTackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTackCell.swift; sourceTree = "<group>"; };
+		D5FE27051E9AAF5A00CFCFDF /* SoundCloudTrackTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCloudTrackTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				D5FE26D31E91F36C00CFCFDF /* ZodioTests.swift */,
+				D5FE27051E9AAF5A00CFCFDF /* SoundCloudTrackTest.swift */,
 				D5FE26D51E91F36C00CFCFDF /* Info.plist */,
 			);
 			path = ZodioTests;
@@ -539,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5FE26D41E91F36C00CFCFDF /* ZodioTests.swift in Sources */,
+				D5FE27061E9AAF5A00CFCFDF /* SoundCloudTrackTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

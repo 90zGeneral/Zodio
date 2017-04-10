@@ -37,7 +37,21 @@ class MainVC: UIViewController, UITextFieldDelegate {
         zodiacSearch.text = ""
         zodiacSearch.resignFirstResponder()
         
+        checkIfTextFieldIsEmpty(string: zodiacSearch.text)
+        
         return true
+    }
+    
+    //For Unit Testing purpose only 
+    @discardableResult func checkIfTextFieldIsEmpty(string: String?) -> Bool {
+        
+        if let enteredString = string {
+            print(enteredString)
+            
+            return true
+        }
+        
+        return false
     }
     
     //Prepare for the segue
