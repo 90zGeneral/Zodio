@@ -17,6 +17,8 @@ Third party technologies used are SoundCloud Public Search API for providing the
 ### How To Use The App
 Use the `Zodio.xcworkspace` file to open the app in Xcode
 
+Set the active scheme to `Zodio`. This is located in the top left corner in Xcode to the right of the `Stop` button.
+
 Choose the simulator device of your choice in Xcode or connect a physical device.
 
 `Tap inside the textField` to activate the editing mode and enter your zodiac sign.
