@@ -57,43 +57,369 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Zodiac Sign Below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09B-xc-Rmx">
-                                <rect key="frame" x="38" y="322" width="300" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Zodiac Sign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09B-xc-Rmx">
+                                <rect key="frame" x="18" y="264" width="340" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="BZ8-OP-Ggf"/>
-                                    <constraint firstAttribute="height" constant="30" id="H8Y-4B-FE7"/>
+                                    <constraint firstAttribute="width" constant="340" id="TRc-FP-QY7"/>
+                                    <constraint firstAttribute="height" constant="25" id="y2Y-m7-PCM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. virgo" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="gXq-ti-3kp">
-                                <rect key="frame" x="38" y="357" width="300" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="4LZ-zu-6nx"/>
-                                    <constraint firstAttribute="height" constant="30" id="fYP-xJ-eZK"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C4s-IY-8Cx">
+                                <rect key="frame" x="38" y="297" width="300" height="350"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="pyj-o1-dtR">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oBw-ua-LVA">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnT-C2-J5m">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="11e-M5-iGI"/>
+                                                            <constraint firstAttribute="height" constant="60" id="Vzi-hK-DvE"/>
+                                                        </constraints>
+                                                        <state key="normal" image="aquarius"/>
+                                                        <connections>
+                                                            <action selector="zodiacSignTouched:" destination="En3-Sy-b5v" eventType="touchUpInside" id="vLl-f8-mbg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aquarius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="MCO-J1-t5m">
+                                                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="6Sw-eF-ZmW"/>
+                                                            <constraint firstAttribute="height" constant="20" id="yP9-Nq-CPS"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PJX-YL-yuQ">
+                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDf-jo-lpS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="bMd-H3-07b"/>
+                                                            <constraint firstAttribute="height" constant="60" id="pFJ-DS-IZM"/>
+                                                        </constraints>
+                                                        <state key="normal" image="pisces"/>
+                                                        <connections>
+                                                            <action selector="zodiacSignTouched:" destination="En3-Sy-b5v" eventType="touchUpInside" id="JVJ-Xp-JR0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pisces" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IY1-j2-CGF">
+                                                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="4R7-KF-4LB"/>
+                                                            <constraint firstAttribute="height" constant="20" id="M9Q-an-ok1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="a4u-GV-sKO">
+                                                <rect key="frame" x="240" y="0.0" width="60" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sld-I9-nyN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="9kl-ed-ZTx"/>
+                                                            <constraint firstAttribute="height" constant="60" id="fGD-tO-qtq"/>
+                                                        </constraints>
+                                                        <state key="normal" image="aries"/>
+                                                        <connections>
+                                                            <action selector="zodiacSignTouched:" destination="En3-Sy-b5v" eventType="touchUpInside" id="cOd-jQ-E6W"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pa-IG-VT2">
+                                                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="W4u-MG-2Ts"/>
+                                                            <constraint firstAttribute="height" constant="20" id="mNf-qY-bWt"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="SxY-0F-Bct">
+                                        <rect key="frame" x="0.0" y="90" width="300" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="52t-e0-s0s">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbD-Bc-8rm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="8WT-8N-Fzr"/>
+                                                            <constraint firstAttribute="height" constant="60" id="fIm-Cb-Z1D"/>
+                                                        </constraints>
+                                                        <state key="normal" image="taurus"/>
+                                                        <connections>
+                                                            <action selector="zodiacSignTouched:" destination="En3-Sy-b5v" eventType="touchUpInside" id="MhH-Yb-Fiz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taurus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npV-Di-g7W">
+                                                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="GaI-D5-UiR"/>
+                                                            <constraint firstAttribute="width" constant="60" id="tgE-Ak-uJc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iCM-zx-fZG">
+                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ls1-WX-IaU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="hMC-R5-nqu"/>
+                                                            <constraint firstAttribute="width" constant="60" id="qMA-i2-ivk"/>
+                                                        </constraints>
+                                                        <state key="normal" image="gemini"/>
+                                                        <connections>
+                                                            <action selector="zodiacSignTouched:" destination="En3-Sy-b5v" eventType="touchUpInside" id="Icz-Z2-y9r"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gemini" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fa-Ni-k9y">
+                                                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="bgP-tK-Tt6"/>
+                                                            <constraint firstAttribute="height" constant="20" id="dt7-v4-ISA"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BJ7-fb-6tR">
+                                                <rect key="frame" x="240" y="0.0" width="60" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpP-OG-Srt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="dcy-OE-xek"/>
+                                                            <constraint firstAttribute="width" constant="60" id="zeV-2v-Sze"/>
+                                                        </constraints>
+                                                        <state key="normal" image="cancer"/>
+                                                        <connections>
+                                                            <action selector="zodiacSignTouched:" destination="En3-Sy-b5v" eventType="touchUpInside" id="DBO-rI-9wJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vks-4a-3nC">
+                                                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="7U5-ME-Pgp"/>
+                                                            <constraint firstAttribute="width" constant="60" id="g1b-EL-iFi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="ZYs-mW-qUV">
+                                        <rect key="frame" x="0.0" y="180" width="300" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KJA-CJ-yG0">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ag-YM-QyC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="0fy-tl-QoM"/>
+                                                            <constraint firstAttribute="width" constant="60" id="QwS-yw-fZd"/>
+                                                        </constraints>
+                                                        <state key="normal" image="leo"/>
+                                                        <connections>
+                                                            <action selector="zodiacSignTouched:" destination="En3-Sy-b5v" eventType="touchUpInside" id="oRK-ua-mUw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybE-iv-C5H">
+                                                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="1q0-Qc-ySO"/>
+                                                            <constraint firstAttribute="width" constant="60" id="7LE-dE-wGa"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cdV-aC-XOb">
+                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXv-s4-ov7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="0uq-x9-qUW"/>
+                                                            <constraint firstAttribute="height" constant="60" id="ejx-7K-OG7"/>
+                                                        </constraints>
+                                                        <state key="normal" image="virgo"/>
+                                                        <connections>
+                                                            <action selector="zodiacSignTouched:" destination="En3-Sy-b5v" eventType="touchUpInside" id="4jc-9M-PYM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virgo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0U-KF-pYg">
+                                                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="XrI-dr-kwQ"/>
+                                                            <constraint firstAttribute="width" constant="60" id="hGz-BF-tw1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bk7-cN-jiT">
+                                                <rect key="frame" x="240" y="0.0" width="60" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="an4-dd-3qs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="5dL-FT-xpK"/>
+                                                            <constraint firstAttribute="height" constant="60" id="NVJ-71-Csq"/>
+                                                        </constraints>
+                                                        <state key="normal" image="libra"/>
+                                                        <connections>
+                                                            <action selector="zodiacSignTouched:" destination="En3-Sy-b5v" eventType="touchUpInside" id="FDX-uf-pTn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Libra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kk-z6-bVN">
+                                                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="Z6i-Oh-8aW"/>
+                                                            <constraint firstAttribute="height" constant="20" id="uJo-ez-6yQ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="PhK-wC-ete">
+                                        <rect key="frame" x="0.0" y="270" width="300" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="B54-Gb-gaS">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMK-yE-8HB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="3LO-JP-cKI"/>
+                                                            <constraint firstAttribute="height" constant="60" id="L4N-id-Z1d"/>
+                                                        </constraints>
+                                                        <state key="normal" image="scorpio"/>
+                                                        <connections>
+                                                            <action selector="zodiacSignTouched:" destination="En3-Sy-b5v" eventType="touchUpInside" id="bG7-WA-KpE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scorpio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHZ-Lt-OaN">
+                                                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="PiG-wn-9vF"/>
+                                                            <constraint firstAttribute="height" constant="20" id="iR2-VR-LSp"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5K6-vE-8eU">
+                                                <rect key="frame" x="120" y="0.0" width="60" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOZ-Ka-BD9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="96I-55-FyN"/>
+                                                            <constraint firstAttribute="height" constant="60" id="xJY-pQ-HQC"/>
+                                                        </constraints>
+                                                        <state key="normal" image="sagittarius"/>
+                                                        <connections>
+                                                            <action selector="zodiacSignTouched:" destination="En3-Sy-b5v" eventType="touchUpInside" id="aWp-Jg-bYS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sagittarius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhh-m1-Akd">
+                                                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="nSe-7H-ovC"/>
+                                                            <constraint firstAttribute="height" constant="20" id="ntG-fA-ds8"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XHB-PI-94B">
+                                                <rect key="frame" x="240" y="0.0" width="60" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5K-Mw-TeA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="0Ly-85-YJd"/>
+                                                            <constraint firstAttribute="height" constant="60" id="RRY-oO-t4M"/>
+                                                        </constraints>
+                                                        <state key="normal" image="capricorn"/>
+                                                        <connections>
+                                                            <action selector="zodiacSignTouched:" destination="En3-Sy-b5v" eventType="touchUpInside" id="Vh6-u3-PGh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capricorn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1F-3A-Rgj">
+                                                        <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="B7P-tY-2ww"/>
+                                                            <constraint firstAttribute="height" constant="20" id="qW1-Hz-p8o"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="qDX-Zh-xej" secondAttribute="trailing" id="10I-OL-bCJ"/>
                             <constraint firstItem="qDX-Zh-xej" firstAttribute="top" secondItem="A9p-eI-ra1" secondAttribute="bottom" constant="7" id="9kz-fT-hf1"/>
-                            <constraint firstItem="09B-xc-Rmx" firstAttribute="centerX" secondItem="din-Vl-UNa" secondAttribute="centerX" id="GpD-EN-wwB"/>
-                            <constraint firstItem="DrV-e8-mRh" firstAttribute="top" secondItem="gXq-ti-3kp" secondAttribute="bottom" constant="280" id="ML4-k6-nyP"/>
                             <constraint firstItem="A9p-eI-ra1" firstAttribute="centerX" secondItem="din-Vl-UNa" secondAttribute="centerX" id="Qma-PR-JOR"/>
-                            <constraint firstItem="gXq-ti-3kp" firstAttribute="centerX" secondItem="din-Vl-UNa" secondAttribute="centerX" id="WOV-HL-cre"/>
                             <constraint firstItem="A9p-eI-ra1" firstAttribute="top" secondItem="mik-Cb-IwS" secondAttribute="bottom" constant="7" id="aa8-oz-88r"/>
-                            <constraint firstItem="gXq-ti-3kp" firstAttribute="top" secondItem="09B-xc-Rmx" secondAttribute="bottom" constant="5" id="blb-Cm-7oo"/>
+                            <constraint firstItem="C4s-IY-8Cx" firstAttribute="top" secondItem="09B-xc-Rmx" secondAttribute="bottom" constant="8" id="bS4-6q-WEW"/>
+                            <constraint firstItem="DrV-e8-mRh" firstAttribute="top" secondItem="C4s-IY-8Cx" secondAttribute="bottom" constant="20" id="l4R-mh-MQX"/>
+                            <constraint firstItem="C4s-IY-8Cx" firstAttribute="centerX" secondItem="din-Vl-UNa" secondAttribute="centerX" id="pEM-DG-lN8"/>
+                            <constraint firstItem="09B-xc-Rmx" firstAttribute="centerX" secondItem="din-Vl-UNa" secondAttribute="centerX" id="pFy-P9-HZn"/>
                             <constraint firstItem="qDX-Zh-xej" firstAttribute="leading" secondItem="din-Vl-UNa" secondAttribute="leading" id="xvh-qX-EnZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mm6-uR-j7C"/>
                     <connections>
-                        <outlet property="zodiacSearch" destination="gXq-ti-3kp" id="UJd-LT-fja"/>
                         <segue destination="1NB-Rh-mRD" kind="show" identifier="TracksVC" id="ndu-td-BCW"/>
                     </connections>
                 </viewController>
@@ -323,6 +649,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="aquarius" width="324" height="324"/>
+        <image name="aries" width="324" height="324"/>
+        <image name="cancer" width="324" height="324"/>
+        <image name="capricorn" width="324" height="324"/>
+        <image name="gemini" width="324" height="324"/>
+        <image name="leo" width="324" height="324"/>
+        <image name="libra" width="324" height="324"/>
         <image name="orangeStopBtn" width="256" height="256"/>
+        <image name="pisces" width="324" height="324"/>
+        <image name="sagittarius" width="324" height="324"/>
+        <image name="scorpio" width="324" height="324"/>
+        <image name="taurus" width="324" height="324"/>
+        <image name="virgo" width="324" height="324"/>
     </resources>
 </document>
