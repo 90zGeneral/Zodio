@@ -8,7 +8,6 @@ The name Zodio derives from the words "zodiac" and "radio".
 ### Use Case
 It is an iOS app that allows its users to search and discover the tracks people of the same zodiac signs are listening to.
 
-<<<<<<< HEAD
 ### IDE
 This app was built using Xcode 8, Swift 3 and requires atleast iOS 10.2 to run.
 
@@ -48,7 +47,4 @@ Cleaner code and a stronger MVC structure
 See the `ZodioTests` group for Unit Testing
 
 See the `ZodioUITests` group for UI Testing
-
-=======
->>>>>>> 8d1a8a084cd9464e291be2bf8d359cb82443cb22
 
