@@ -9,40 +9,15 @@ class MainVC: UIViewController {
         super.viewDidLoad()
 
     }
-//    
-//    //Activate the return key on the keyboard
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        
-//        //Make sure the search bar is not empty
-//        if zodiacSearch.text != nil && zodiacSearch.text != "" && zodiacSearch.text != " " {
-//            
-//            //Remove the empty space at the end of the input string from the keyboard recommendations
-//            if zodiacSearch.text?.characters.last == " " {
-//                
-//                zodiacSearch.text?.characters.removeLast()
-//            }
-//            
-//            let zodiacString = zodiacSearch.text
-//            
-//            //Perform segue
-//            performSegue(withIdentifier: "TracksVC", sender: zodiacString)
-//        }
-//        
-//        //Empty out the tracks array, textField, and disable the keyboard
-//        tracks.removeAll()
-//        zodiacSearch.text = ""
-//        zodiacSearch.resignFirstResponder()
-//        
-//        checkIfTextFieldIsEmpty(string: zodiacSearch.text)
-//        
-//        return true
-//    }
     
+    //Which button was selected
     @IBAction func zodiacSignTouched(_ sender: UIButton) {
         
+        //Grab the button's tag number
         let buttonTag = sender.tag
         let zodiacString: String!
         
+        //Which on the tag number
         switch buttonTag {
         case 1:
             zodiacString = "aquarius"
@@ -72,25 +47,11 @@ class MainVC: UIViewController {
             zodiacString = ""
         }
         
+        //Perform segue
         performSegue(withIdentifier: "TracksVC", sender: zodiacString)
         
+        //Empty out the array
         tracks.removeAll()
-        
-        checkIfTextFieldIsEmpty(string: zodiacString)
-        
-    }
-    
-    
-    //For Unit Testing purpose only 
-    @discardableResult func checkIfTextFieldIsEmpty(string: String?) -> Bool {
-        
-        if let enteredString = string {
-            print(enteredString)
-            
-            return true
-        }
-        
-        return false
     }
     
     //Prepare for the segue
