@@ -1,9 +1,9 @@
-//  SoundCloudTrack.swift
+//  SpotifyTrack.swift
 //  Zodio
 
 import Foundation
 
-class SoundCloudTrack {
+class SpotifyTrack {
     
     //Private variables
     fileprivate var _trackName: String!

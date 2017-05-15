@@ -21,7 +21,7 @@ class TrackCell: UITableViewCell {
     }
     
     //Cell configuration
-    func configureCell(track: SoundCloudTrack) {
+    func configureCell(track: SpotifyTrack) {
         
         //Assignment for cell content
         trackName.text = track.trackName

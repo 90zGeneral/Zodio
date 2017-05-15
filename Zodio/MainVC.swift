@@ -3,55 +3,55 @@
 
 import UIKit
 
-class MainVC: UIViewController, UITextFieldDelegate {
-    
-    //Outlet
-    @IBOutlet weak var zodiacSearch: UITextField!
+class MainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        zodiacSearch.delegate = self
+
     }
     
-    //Activate the return key on the keyboard
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    //Which button was selected
+    @IBAction func zodiacSignTouched(_ sender: UIButton) {
         
-        //Make sure the search bar is not empty
-        if zodiacSearch.text != nil && zodiacSearch.text != "" && zodiacSearch.text != " " {
-            
-            //Remove the empty space at the end of the input string from the keyboard recommendations
-            if zodiacSearch.text?.characters.last == " " {
-                
-                zodiacSearch.text?.characters.removeLast()
-            }
-            
-            let zodiacString = zodiacSearch.text
-            
-            //Perform segue
-            performSegue(withIdentifier: "TracksVC", sender: zodiacString)
+        //Grab the button's tag number
+        let buttonTag = sender.tag
+        let zodiacString: String!
+        
+        //Which on the tag number
+        switch buttonTag {
+        case 1:
+            zodiacString = "aquarius"
+        case 2:
+            zodiacString = "pisces"
+        case 3:
+            zodiacString = "aries"
+        case 4:
+            zodiacString = "taurus"
+        case 5:
+            zodiacString = "gemini"
+        case 6:
+            zodiacString = "cancer"
+        case 7:
+            zodiacString = "leo"
+        case 8:
+            zodiacString = "virgo"
+        case 9:
+            zodiacString = "libra"
+        case 10:
+            zodiacString = "scorpio"
+        case 11:
+            zodiacString = "sagittarius"
+        case 12:
+            zodiacString = "capricorn"
+        default:
+            zodiacString = ""
         }
         
-        //Empty out the tracks array, textField, and disable the keyboard
+        //Perform segue
+        performSegue(withIdentifier: "TracksVC", sender: zodiacString)
+        
+        //Empty out the array
         tracks.removeAll()
-        zodiacSearch.text = ""
-        zodiacSearch.resignFirstResponder()
-        
-        checkIfTextFieldIsEmpty(string: zodiacSearch.text)
-        
-        return true
-    }
-    
-    //For Unit Testing purpose only 
-    @discardableResult func checkIfTextFieldIsEmpty(string: String?) -> Bool {
-        
-        if let enteredString = string {
-            print(enteredString)
-            
-            return true
-        }
-        
-        return false
     }
     
     //Prepare for the segue

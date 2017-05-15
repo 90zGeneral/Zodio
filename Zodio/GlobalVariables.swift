@@ -4,8 +4,8 @@
 import Foundation
 
 //Array of songs
-var tracks = [SoundCloudTrack]()
-var userTracks = [SoundCloudTrack]()
+var tracks = [SpotifyTrack]()
+var userTracks = [SpotifyTrack]()
 
 //Variables declaration
 var userInput: String!
@@ -18,10 +18,10 @@ func updateURL(input: String) {
     
     //Constants for the api endpoint
     userInput = input
-    let UrlBase = "http://api.soundcloud.com"
-    let urlTrack = "/tracks?q=" + userInput + "&limit=10&"
-    let myClientID = "client_id=d6i0wruU7ddayTqrhwszluW0i9aNBlb1"
-    completeUrl = UrlBase + urlTrack + myClientID
+    let UrlBase = "https://api.spotify.com"
+    let urlTrack = "/v1/search?q=" + userInput + "&type=track"
+
+    completeUrl = UrlBase + urlTrack
 }
 
 //Alias for closure

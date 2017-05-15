@@ -30,7 +30,8 @@ class ZodioTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
+
+/*
     //Test the state change in the textField
     func testCheckIfTextFieldIsEmpty() {
         let sign = "scorpio"
@@ -39,5 +40,7 @@ class ZodioTests: XCTestCase {
         XCTAssertTrue(vc.checkIfTextFieldIsEmpty(string: sign), "A zodiac sign has been entered")
         XCTAssertFalse(vc.checkIfTextFieldIsEmpty(string: nilSign))
     }
-    
+ 
+*/
+
 }

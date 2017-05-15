@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover the music your zodiac sign loves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrI-RO-UZp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover the music your zodiac sign loves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PrI-RO-UZp">
                                 <rect key="frame" x="10" y="320" width="355" height="27"/>
                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="21"/>
                                 <nil key="textColor"/>
@@ -40,6 +40,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="PrI-RO-UZp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="10" id="2Mq-Jf-9AC"/>
+                            <constraint firstAttribute="trailing" secondItem="PrI-RO-UZp" secondAttribute="trailing" constant="10" id="78A-wo-KCs"/>
                             <constraint firstItem="3lI-Uw-Mnr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KSx-Sb-2YI"/>
                             <constraint firstItem="PrI-RO-UZp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bmB-v4-nRd"/>
                             <constraint firstItem="PrI-RO-UZp" firstAttribute="top" secondItem="3lI-Uw-Mnr" secondAttribute="bottom" constant="5" id="wYc-hG-3dv"/>

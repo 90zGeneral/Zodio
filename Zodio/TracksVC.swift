@@ -30,7 +30,7 @@ class TracksVC: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         //Function call to api network request
-        fetchData.downloadSoundCloudTrackDetails {
+        fetchData.downloadSpotifyTrackDetails {
             
             //Reload the table after the data finish downloading and just before the view appears
             self.songsTableView.reloadData()
@@ -73,8 +73,8 @@ class TracksVC: UITableViewController {
     //Prepare the segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? SelectedTrackVC {
-            if let thisTrack = sender as? SoundCloudTrack {
-                destination.soundCloudTrack = thisTrack
+            if let thisTrack = sender as? SpotifyTrack {
+                destination.spotifyTrack = thisTrack
             }
         }
     }
