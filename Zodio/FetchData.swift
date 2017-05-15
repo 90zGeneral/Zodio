@@ -12,7 +12,7 @@ import Alamofire
 class FetchData {
     
     //To make the network call to the api
-    func downloadSoundCloudTrackDetails(completed: @escaping DownloadComplete) {
+    func downloadSpotifyTrackDetails(completed: @escaping DownloadComplete) {
         
         //String conversion to URL
         let theFullUrl = URL(string: completeUrl)!
@@ -27,13 +27,13 @@ class FetchData {
                 for eachTrackDict in arrayOfDicts {
                     
                     //New Instance for each dictionary in the array
-                    let newSoundCloudTrack = SoundCloudTrack(trackDict: eachTrackDict)
+                    let newSpotifyTrack = SpotifyTrack(trackDict: eachTrackDict)
                     
                     //Limit the array to 5 tracks at a time
                     if whichArrayToUse == "tracks" {
-                        tracks.append(newSoundCloudTrack)
+                        tracks.append(newSpotifyTrack)
                     }else if whichArrayToUse == "userTracks" {
-                        userTracks.append(newSoundCloudTrack)
+                        userTracks.append(newSpotifyTrack)
                     }
                 }
             }

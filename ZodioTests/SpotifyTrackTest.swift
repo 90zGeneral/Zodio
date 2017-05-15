@@ -1,10 +1,10 @@
-//  SoundCloudTrackTest.swift
+//  SpotifyTrackTest.swift
 //  Zodio
 
 import XCTest
 @testable import Zodio
 
-class SoundCloudTrackTest: XCTestCase {
+class SpotifyTrackTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -16,11 +16,11 @@ class SoundCloudTrackTest: XCTestCase {
         super.tearDown()
     }
     
-    //Test class initializer for SoundCloudTrack
+    //Test class initializer for SpotifyTrack
     func testInit_ShouldTakeDictionary() {
         
         let dict: [String: Any] = ["title": "Love Birds", "artwork_url": "http://a1.image.com/artwork-large.png", "user": "Beastman"]
-        let sound = SoundCloudTrack(trackDict: dict)
+        let sound = SpotifyTrackTest(trackDict: dict)
         
         XCTAssertEqual(sound.trackName, "Love Birds")
         XCTAssertFalse(sound.username == "Beastman")

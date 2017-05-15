@@ -19,14 +19,14 @@
 		D5FE26DF1E91F36C00CFCFDF /* ZodioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26DE1E91F36C00CFCFDF /* ZodioUITests.swift */; };
 		D5FE26F21E92DA2000CFCFDF /* SelectedTrackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26F11E92DA2000CFCFDF /* SelectedTrackVC.swift */; };
 		D5FE26F41E92DCF900CFCFDF /* UsernameTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26F31E92DCF900CFCFDF /* UsernameTableVC.swift */; };
-		D5FE26F61E93F8A100CFCFDF /* SoundCloudTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26F51E93F8A100CFCFDF /* SoundCloudTrack.swift */; };
+		D5FE26F61E93F8A100CFCFDF /* SpotifyTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26F51E93F8A100CFCFDF /* SpotifyTrack.swift */; };
 		D5FE26F81E93FA3700CFCFDF /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26F71E93FA3700CFCFDF /* TrackCell.swift */; };
 		D5FE26FA1E940D5500CFCFDF /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26F91E940D5500CFCFDF /* GlobalVariables.swift */; };
 		D5FE26FC1E944B2C00CFCFDF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26FB1E944B2C00CFCFDF /* MainVC.swift */; };
 		D5FE26FE1E95D12800CFCFDF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE26FD1E95D12800CFCFDF /* Alamofire.framework */; };
 		D5FE27001E95EB6900CFCFDF /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE26FF1E95EB6900CFCFDF /* FetchData.swift */; };
 		D5FE27041E9879D600CFCFDF /* UserTackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE27031E9879D600CFCFDF /* UserTackCell.swift */; };
-		D5FE27061E9AAF5A00CFCFDF /* SoundCloudTrackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE27051E9AAF5A00CFCFDF /* SoundCloudTrackTest.swift */; };
+		D5FE27061E9AAF5A00CFCFDF /* SpotifyTrackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE27051E9AAF5A00CFCFDF /* SpotifyTrackTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,14 +71,14 @@
 		D5FE26E01E91F36C00CFCFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5FE26F11E92DA2000CFCFDF /* SelectedTrackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTrackVC.swift; sourceTree = "<group>"; };
 		D5FE26F31E92DCF900CFCFDF /* UsernameTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameTableVC.swift; sourceTree = "<group>"; };
-		D5FE26F51E93F8A100CFCFDF /* SoundCloudTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCloudTrack.swift; sourceTree = "<group>"; };
+		D5FE26F51E93F8A100CFCFDF /* SpotifyTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyTrack.swift; sourceTree = "<group>"; };
 		D5FE26F71E93FA3700CFCFDF /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		D5FE26F91E940D5500CFCFDF /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		D5FE26FB1E944B2C00CFCFDF /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D5FE26FD1E95D12800CFCFDF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Zodio-chhwhskvoangzueyxldxpxcmbibu/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		D5FE26FF1E95EB6900CFCFDF /* FetchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 		D5FE27031E9879D600CFCFDF /* UserTackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTackCell.swift; sourceTree = "<group>"; };
-		D5FE27051E9AAF5A00CFCFDF /* SoundCloudTrackTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCloudTrackTest.swift; sourceTree = "<group>"; };
+		D5FE27051E9AAF5A00CFCFDF /* SpotifyTrackTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyTrackTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				D5FE26D31E91F36C00CFCFDF /* ZodioTests.swift */,
-				D5FE27051E9AAF5A00CFCFDF /* SoundCloudTrackTest.swift */,
+				D5FE27051E9AAF5A00CFCFDF /* SpotifyTrackTest.swift */,
 				D5FE26D51E91F36C00CFCFDF /* Info.plist */,
 			);
 			path = ZodioTests;
@@ -222,7 +222,7 @@
 		D5FE26EF1E91F3F400CFCFDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D5FE26F51E93F8A100CFCFDF /* SoundCloudTrack.swift */,
+				D5FE26F51E93F8A100CFCFDF /* SpotifyTrack.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -313,7 +313,7 @@
 				TargetAttributes = {
 					D5FE26BA1E91F36B00CFCFDF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3983Y6QL49;
+						DevelopmentTeam = QG9HYMA775;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -526,7 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5FE26C11E91F36B00CFCFDF /* TracksVC.swift in Sources */,
-				D5FE26F61E93F8A100CFCFDF /* SoundCloudTrack.swift in Sources */,
+				D5FE26F61E93F8A100CFCFDF /* SpotifyTrack.swift in Sources */,
 				D5FE26F41E92DCF900CFCFDF /* UsernameTableVC.swift in Sources */,
 				D5FE27041E9879D600CFCFDF /* UserTackCell.swift in Sources */,
 				D5FE26F21E92DA2000CFCFDF /* SelectedTrackVC.swift in Sources */,
@@ -543,7 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5FE26D41E91F36C00CFCFDF /* ZodioTests.swift in Sources */,
-				D5FE27061E9AAF5A00CFCFDF /* SoundCloudTrackTest.swift in Sources */,
+				D5FE27061E9AAF5A00CFCFDF /* SpotifyTrackTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,10 +689,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3983Y6QL49;
+				DEVELOPMENT_TEAM = QG9HYMA775;
 				INFOPLIST_FILE = Zodio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.italyte.Zodio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.italytes.Zodio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -704,10 +705,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3983Y6QL49;
+				DEVELOPMENT_TEAM = QG9HYMA775;
 				INFOPLIST_FILE = Zodio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.italyte.Zodio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.italytes.Zodio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

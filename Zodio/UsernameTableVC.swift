@@ -10,7 +10,7 @@ class UsernameTableVC: UITableViewController {
     @IBOutlet var userSongTable: UITableView!
     
     //New instances
-    var userSoundCloudTrack: SoundCloudTrack!
+    var userSpotifyTrack: SpotifyTrack!
     var fetchUserData = FetchData()
 
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class UsernameTableVC: UITableViewController {
         userSongTable.dataSource = self
         
         //Label assignment
-        usernameTitle.text = "Tracks from " + userSoundCloudTrack.username.capitalized
+        usernameTitle.text = "Tracks from " + userSpotifyTrack.username.capitalized
         
         //To update the state on which array to use to populate the table
         whichArrayToUse = "userTracks"
@@ -29,7 +29,7 @@ class UsernameTableVC: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         //Function call
-        fetchUserData.downloadSoundCloudTrackDetails {
+        fetchUserData.downloadSpotifyTrackDetails {
             
             //Reload table
             self.userSongTable.reloadData()

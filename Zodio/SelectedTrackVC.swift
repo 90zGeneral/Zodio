@@ -13,8 +13,8 @@ class SelectedTrackVC: UIViewController {
     @IBOutlet weak var moreTunesBtn: UIButton!
     @IBOutlet weak var musicBtnImg: UIButton!
     
-    //A soundCloud track
-    var soundCloudTrack: SoundCloudTrack!
+    //A spotify track
+    var spotifyTrack: SpotifyTrack!
     var fetchData = FetchData()
     
     //Declaration of an AVPlayer, its Item, and current play state
@@ -29,21 +29,21 @@ class SelectedTrackVC: UIViewController {
         super.viewDidLoad()
         
         //String conversion to URL to stream the music, add item to AVPlayer, set the rate of the player, and change the play state
-        playerItem = AVPlayerItem(url: URL(string: soundCloudTrack.streamUrl + "?client_id=d6i0wruU7ddayTqrhwszluW0i9aNBlb1")!)
+        playerItem = AVPlayerItem(url: URL(string: spotifyTrack.streamUrl + "?client_id=d6i0wruU7ddayTqrhwszluW0i9aNBlb1")!)
         player = AVPlayer(playerItem: playerItem)
         player.rate = 1.0
         player.play()
         isMusicPlaying = true
         
-        if soundCloudTrack != nil {
+        if spotifyTrack != nil {
             
             //Outlet assignments
-            trackTitle.text = soundCloudTrack.trackName
-            uploadedBy.text = "uploaded by " + soundCloudTrack.username.capitalized
-            moreTunesBtn.setTitle("More Tracks from " + soundCloudTrack.username.capitalized, for: .normal)
+            trackTitle.text = spotifyTrack.trackName
+            uploadedBy.text = "uploaded by " + spotifyTrack.username.capitalized
+            moreTunesBtn.setTitle("More Tracks from " + spotifyTrack.username.capitalized, for: .normal)
             
             //String conversion to URL and function call to download the image if successful
-            if let checkedUrl = URL(string: soundCloudTrack.trackImg) {
+            if let checkedUrl = URL(string: spotifyTrack.trackImg) {
                 trackImg.contentMode = .scaleAspectFit
                 downloadImage(url: checkedUrl)
                 
@@ -105,15 +105,15 @@ class SelectedTrackVC: UIViewController {
         updateURL(input: userArray[convertRandToInt])
         
         //Perform segue
-        performSegue(withIdentifier: "UserTableVC", sender: soundCloudTrack)
+        performSegue(withIdentifier: "UserTableVC", sender: spotifyTrack)
         
     }
     
     //Prepare for the segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? UsernameTableVC {
-            if let chosenTrack = sender as? SoundCloudTrack {
-                destination.userSoundCloudTrack = chosenTrack
+            if let chosenTrack = sender as? SpotifyTrack {
+                destination.userSpotifyTrack = chosenTrack
             }
         }
     }
