@@ -20,7 +20,7 @@ class UsernameTableVC: UITableViewController {
         userSongTable.dataSource = self
         
         //Label assignment
-        usernameTitle.text = "Tracks from " + userSpotifyTrack.username.capitalized
+        usernameTitle.text = "Tracks from " + userSpotifyTrack.artist.capitalized
         
         //To update the state on which array to use to populate the table
         whichArrayToUse = "userTracks"

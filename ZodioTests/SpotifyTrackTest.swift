@@ -20,7 +20,7 @@ class SpotifyTrackTest: XCTestCase {
     func testInit_ShouldTakeDictionary() {
         
         let dict: [String: Any] = ["title": "Love Birds", "artwork_url": "http://a1.image.com/artwork-large.png", "user": "Beastman"]
-        let sound = SpotifyTrackTest(trackDict: dict)
+        let sound = SpotifyTrack(trackDict: dict)
         
         XCTAssertEqual(sound.trackName, "Love Birds")
         XCTAssertFalse(sound.username == "Beastman")

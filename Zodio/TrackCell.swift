@@ -25,7 +25,7 @@ class TrackCell: UITableViewCell {
         
         //Assignment for cell content
         trackName.text = track.trackName
-        username.text = "from " + track.username
+        username.text = "from " + track.artist
     }
 
 }

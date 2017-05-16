@@ -34,7 +34,11 @@ class TracksVC: UITableViewController {
             
             //Reload the table after the data finish downloading and just before the view appears
             self.songsTableView.reloadData()
+            
+            print("Yes, \(tracks.count)")
         }
+        
+        print(tracks.count)
     }
     
     //Number of sections in the tableView

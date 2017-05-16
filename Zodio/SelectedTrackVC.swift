@@ -39,8 +39,8 @@ class SelectedTrackVC: UIViewController {
             
             //Outlet assignments
             trackTitle.text = spotifyTrack.trackName
-            uploadedBy.text = "uploaded by " + spotifyTrack.username.capitalized
-            moreTunesBtn.setTitle("More Tracks from " + spotifyTrack.username.capitalized, for: .normal)
+            uploadedBy.text = "uploaded by " + spotifyTrack.artist.capitalized
+            moreTunesBtn.setTitle("More Tracks from " + spotifyTrack.artist.capitalized, for: .normal)
             
             //String conversion to URL and function call to download the image if successful
             if let checkedUrl = URL(string: spotifyTrack.trackImg) {

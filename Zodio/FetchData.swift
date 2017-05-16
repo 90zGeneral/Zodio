@@ -20,20 +20,31 @@ class FetchData {
         //GET request
         Alamofire.request(theFullUrl).responseJSON { (response) in
             
-            //To store the results being returned as an array of dictionaries
-            if let arrayOfDicts = response.result.value! as? [[String: Any]] {
+            //To store the results being returned a dictionary
+            if let responseDict = response.result.value as? [String: Any] {
                 
-                //Loop over the array
-                for eachTrackDict in arrayOfDicts {
+                //Access the only key from responseDict where all the info lives
+                if let theTracks = responseDict["tracks"] as? [String: Any] {
                     
-                    //New Instance for each dictionary in the array
-                    let newSpotifyTrack = SpotifyTrack(trackDict: eachTrackDict)
-                    
-                    //Limit the array to 5 tracks at a time
-                    if whichArrayToUse == "tracks" {
-                        tracks.append(newSpotifyTrack)
-                    }else if whichArrayToUse == "userTracks" {
-                        userTracks.append(newSpotifyTrack)
+                    //Grab the array that contains all the tracks
+                    if let items = theTracks["items"] as? [[String: Any]] {
+                        
+                        //Loop over the array
+                        for item in items {
+                            
+                            //New Instance for each dictionary in the array
+                            let newSpotifyTrack = SpotifyTrack(trackDict: item)
+                            
+                            //To decide which array to append into for populating the tableviews
+                            if whichArrayToUse == "tracks" {
+                                
+                                tracks.append(newSpotifyTrack)
+                                
+                            }else if whichArrayToUse == "userTracks" {
+                                
+                                userTracks.append(newSpotifyTrack)
+                            }
+                        }
                     }
                 }
             }
@@ -42,3 +53,24 @@ class FetchData {
         }
     }
 }
+
+
+// 
+//// To store the results being returned as an array of dictionaries
+// if let arrayOfDicts = response.result.value! as? [[String: Any]] {
+// 
+////     Loop over the array
+//     for eachTrackDict in arrayOfDicts {
+//     
+////         New Instance for each dictionary in the array
+//         let newSpotifyTrack = SpotifyTrack(trackDict: eachTrackDict)
+//         
+////         Limit the array to 5 tracks at a time
+//         if whichArrayToUse == "tracks" {
+//            tracks.append(newSpotifyTrack)
+//         }else if whichArrayToUse == "userTracks" {
+//            userTracks.append(newSpotifyTrack)
+//         }
+//     }
+// }
+

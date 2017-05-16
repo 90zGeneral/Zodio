@@ -7,7 +7,7 @@ class SpotifyTrack {
     
     //Private variables
     fileprivate var _trackName: String!
-    fileprivate var _username: String!
+    fileprivate var _artist: String!
     fileprivate var _trackImg: String!
     fileprivate var _streamUrl: String!
     fileprivate var _userID: String!
@@ -20,11 +20,11 @@ class SpotifyTrack {
         return _trackName
     }
     
-    var username: String {
-        if _username == nil {
-            _username = ""
+    var artist: String {
+        if _artist == nil {
+            _artist = ""
         }
-        return _username
+        return _artist
     }
     
     var trackImg: String {
@@ -45,7 +45,7 @@ class SpotifyTrack {
     init(trackDict: [String: Any]) {
         
         //Grab the title for the track
-        if let trackTitle = trackDict["title"] as? String {
+        if let trackTitle = trackDict["name"] as? String {
             self._trackName = trackTitle
         }
         
@@ -59,10 +59,10 @@ class SpotifyTrack {
             self._streamUrl = streamingLink
         }
         
-        //Grab the username attached to this track
-        if let userDict = trackDict["user"] as? [String: Any] {
-            if let user = userDict["username"] as? String {
-                self._username = user
+        //Grab the artist attached to this track
+        if let artists = trackDict["artists"] as? [[String: Any]] {
+            if let artistName = artists[0]["name"] as? String {
+                self._artist = artistName
             }
         }
     }
