@@ -50,8 +50,12 @@ class SpotifyTrack {
         }
         
         //Grab the image artwork for the track
-        if let trackArtwork = trackDict["artwork_url"] as? String {
-            self._trackImg = trackArtwork
+        if let trackAlbum = trackDict["album"] as? [String: Any] {
+            if let tracksImages = trackAlbum["images"] as? [[String: Any]] {
+                if let image = tracksImages[0]["url"] as? String {
+                    self._trackImg = image
+                }
+            }
         }
         
         //Grab the streaming link to play audio
