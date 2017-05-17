@@ -21,9 +21,6 @@ class SelectedTrackVC: UIViewController {
     var player = AVPlayer()
     var playerItem: AVPlayerItem!
     var isMusicPlaying = false
-    
-    //These elements will be used as parameters in the network call to see more tracks by a specific user
-    var userArray = ["water", "sand", "fire", "earth", "wind", "cloud", "trees"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,15 +91,14 @@ class SelectedTrackVC: UIViewController {
     //View more tracks from the user
     @IBAction func moreTunesFromUser(_ sender: UIButton) {
         
-        //Random number generator
-        let rand = arc4random_uniform(6) + 1
-        let convertRandToInt = Int(rand)
-        
         //Empty out the array
         userTracks.removeAll()
         
+        //Remove all spaces between an artist name and replace them with a "+" sign
+        let artist = spotifyTrack.artist.replacingOccurrences(of: " ", with: "+")
+        
         //Function call to update the url components for the network call 
-        updateURL(input: userArray[convertRandToInt])
+        updateURL(input: artist)
         
         //Perform segue
         performSegue(withIdentifier: "UserTableVC", sender: spotifyTrack)

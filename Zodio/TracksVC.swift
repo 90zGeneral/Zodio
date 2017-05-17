@@ -29,19 +29,22 @@ class TracksVC: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        //Empty out the array everytime this viewController is ready to appear
-        tracks.removeAll()
+        if tracks.count == 0 {
         
-        //Function call to api network request
-        fetchData.downloadSpotifyTrackDetails {
+            //Function call to api network request
+            fetchData.downloadSpotifyTrackDetails {
+                
+                //Reload the table after the data finish downloading and just before the view appears
+                self.songsTableView.reloadData()
+                
+                print("Yes, \(tracks.count)")
+            }
             
-            //Reload the table after the data finish downloading and just before the view appears
-            self.songsTableView.reloadData()
+            print(tracks.count)
             
-            print("Yes, \(tracks.count)")
+        }else {
+            print(tracks.count)
         }
-        
-        print(tracks.count)
     }
     
     //Number of sections in the tableView
