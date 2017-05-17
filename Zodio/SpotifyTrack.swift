@@ -59,8 +59,11 @@ class SpotifyTrack {
         }
         
         //Grab the streaming link to play audio
-        if let streamingLink = trackDict["stream_url"] as? String {
+        if let streamingLink = trackDict["preview_url"] as? String {
             self._streamUrl = streamingLink
+            
+        }else {
+            self._streamUrl = "https://p.scdn.co/mp3-preview/c279b4f2b4640e54570f8403e05233c6b5f3aa52?cid=null"
         }
         
         //Grab the artist attached to this track
