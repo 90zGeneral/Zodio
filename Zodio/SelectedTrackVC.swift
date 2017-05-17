@@ -26,7 +26,7 @@ class SelectedTrackVC: UIViewController {
         super.viewDidLoad()
         
         //String conversion to URL to stream the music, add item to AVPlayer, set the rate of the player, and change the play state
-        playerItem = AVPlayerItem(url: URL(string: spotifyTrack.streamUrl + "?client_id=d6i0wruU7ddayTqrhwszluW0i9aNBlb1")!)
+        playerItem = AVPlayerItem(url: URL(string: spotifyTrack.streamUrl)!)
         player = AVPlayer(playerItem: playerItem)
         player.rate = 1.0
         player.play()
