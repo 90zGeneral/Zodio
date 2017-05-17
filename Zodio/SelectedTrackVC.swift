@@ -94,11 +94,12 @@ class SelectedTrackVC: UIViewController {
         //Empty out the array
         userTracks.removeAll()
         
-        //Remove all spaces between an artist name and replace them with a "+" sign
-        let artist = spotifyTrack.artist.replacingOccurrences(of: " ", with: "+")
+        //Remove all spaces between an artist name and replace them with a "+" sign. Then remove all accents
+        let artistNameWithoutSpace = spotifyTrack.artist.replacingOccurrences(of: " ", with: "+")
+        let regularArtistName = artistNameWithoutSpace.folding(options: .diacriticInsensitive, locale: .current)
         
         //Function call to update the url components for the network call 
-        updateURL(input: artist)
+        updateURL(input: regularArtistName)
         
         //Perform segue
         performSegue(withIdentifier: "UserTableVC", sender: spotifyTrack)
