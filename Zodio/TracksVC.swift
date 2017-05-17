@@ -29,6 +29,9 @@ class TracksVC: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
+        //Empty out the array everytime this viewController is ready to appear
+        tracks.removeAll()
+        
         //Function call to api network request
         fetchData.downloadSpotifyTrackDetails {
             
